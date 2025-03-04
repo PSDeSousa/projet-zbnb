@@ -1,0 +1,25 @@
+// 1 Import des variables et mixins
+@use "abstracts/variables" as *;
+@use "abstracts/mixins" as *;
+@use "abstracts/functions" as *;
+@use "abstracts/colors" as *;
+@use "abstracts/typography" as *;
+// 2 Import des bases
+@use "base/reset" as *;
+@use "base/reset-typography" as *;
+@use "base/global" as *;
+// 3 Import des layouts
+@use "layout/header" as *;
+@use "layout/footer" as *;
+// 4 Import des composants
+@use "components/buttons/primary" as *;
+@use "components/buttons/secondary" as *;
+@use "components/buttons/terciary" as *;
+@use "components/cards/card" as *;
+// 5 Import des pages spécifiques
+@use "pages/home" as *;
+@use "pages/contact" as *;
+@use "pages/page-404" as *;
+// 6 Import des thèmes
+// 7 Import des utilitaires
+@use "utils/visibility" as *;

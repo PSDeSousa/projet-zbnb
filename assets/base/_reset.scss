@@ -1,0 +1,10 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+@use '../abstracts/typography' as *;
+// Initialisation
+*{
+    margin :0;
+    padding :0;
+    box-sizing : border-box;
+    }
