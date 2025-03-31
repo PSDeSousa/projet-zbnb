@@ -1,0 +1,10 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+@use '../../abstracts/colors' as *;
+@use '../../abstracts/typography' as *;
+// Primary-button
+.primary-button{
+    @include button;
+    width:15rem;
+    height:3rem;
+}

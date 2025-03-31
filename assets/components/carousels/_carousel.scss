@@ -1,0 +1,21 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+@use '../../abstracts/colors' as *;
+@use '../../abstracts/typography' as *;
+.hidden{
+    display : none;
+}
+.carousel{
+@include flex(line, center, center);
+    gap : 1rem;
+}
+.slide{
+    height : 50rem;
+    @include flex(column, center, center);
+}
+.slide img {
+    width : 30rem;
+}
+.forward-btn{
+    transform : rotate(180deg) translatey(+18%);
+}

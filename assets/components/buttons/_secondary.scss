@@ -1,1 +1,10 @@
-
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+@use '../../abstracts/colors' as *;
+@use '../../abstracts/typography' as *;
+// Primary-button
+.secondary-button{
+    @include button(4px,$primary-tag-color,$primary-color, 0.75rem, capitalize);
+    width:8rem;
+    height:2rem;
+}

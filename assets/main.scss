@@ -16,6 +16,10 @@
 @use "components/buttons/secondary" as *;
 @use "components/buttons/terciary" as *;
 @use "components/cards/card" as *;
+@use "components/tags/tag" as *;
+@use "components/carousels/carousel" as *;
+@use "components/accordions/accordion" as *;
+@use "components/forms/form" as *;
 // 5 Import des pages spécifiques
 @use "pages/home" as *;
 @use "pages/contact" as *;

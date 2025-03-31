@@ -1,0 +1,11 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+@use '../../abstracts/colors' as *;
+@use '../../abstracts/typography' as *;
+// Primary-button
+.tag{
+    @include button($radius:1rem,$bg-color:$primary-tag-color,$color:$primary-color,$margin:0.5rem,$case:lowercase);
+    padding:0.2rem 0.5rem;
+    margin-bottom : 0;
+    font-size : 0.75rem;
+}

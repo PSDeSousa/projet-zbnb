@@ -3,7 +3,3 @@
 @use "../abstracts/functions" as *;
 @use "../abstracts/colors" as *;
 @use "../abstracts/typography" as *;
-header{
-    background-color:$primary-color;
-    height:1rem;
-}

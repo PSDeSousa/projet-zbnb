@@ -1,0 +1,56 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+@use '../../abstracts/colors' as *;
+@use '../../abstracts/typography' as *;
+.card{
+    width:80rem;
+    @include flex(line, space-between, top);
+    padding : 1rem;
+    margin:1rem;
+    border-radius:10px;
+    background-color : $primary-color;
+    gap : 1rem;
+    border : 2px $terciary-color solid;
+    img{
+        width : 25rem;
+        height : 20rem;
+        border-radius : 10px;
+        object-fit: cover;
+        flex : 0.8 1 calc(30% - 1rem);
+    }
+    .column{
+        @include flex(column, space-between, start);
+        .block{
+            h3{
+                margin-top:0;
+            }
+        }
+        flex : 1.1 1 calc(45% - 1rem);
+    }
+    .column:last-child{
+        @include flex(column, space-between, end);
+        .block{
+            @include flex(column, space-between, end);
+            .line{
+                @include flex(line, space-between, top);
+                gap: 1rem;
+            }
+            .part{
+                @include flex(column, space-between, end);
+            }
+            .part:first-child{
+                @include flex(column, space-between, start);
+            }
+        }
+        flex : 0.4 1 calc(20% - 1rem)
+    }
+}
+.top-rating{
+    background-color: $primary-card-color;
+}
+.flop-rating{
+    background-color: $secondary-card-color;
+}
+.city{
+    color: $secondary-color;
+}

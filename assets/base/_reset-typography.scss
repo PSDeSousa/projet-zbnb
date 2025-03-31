@@ -1,0 +1,20 @@
+// Typos
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+@use '../abstracts/typography' as *;
+// Titre et paragraphes
+h1{
+    @include text($secondary-color,$primary-font,3.5rem);
+}
+h2{
+    @include text;
+}
+h3{
+    @include text($secondary-color,$secondary-font,1.7rem);
+}
+p{
+    @include text($terciary-color,$terciary-font,1rem);
+    margin-top : 0.5rem;
+    margin-bottom : 0.5rem;
+}

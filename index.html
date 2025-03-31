@@ -4,17 +4,155 @@
         <meta charset="UFT-8">
         <link href="assets/css/styles.css" rel="stylesheet">
         <link href="assets/css/main.css" rel="stylesheet">
-        <title>bootstrap</title>
+        <title>Réservation de vacances facile avec ZenBNB</title>
     </head>
     <body>
-        <header>
-            
+        <header>            
         </header>
         <main>
+            <section id="modalReservation" class="d-none">
 
+                <form id="form" class="form-reservation">
+                    <div class="form-row">
+                        <div class="form-row">
+                            <button type="submit" class="secondary-button">
+                                <p>enregistrer</p>
+                            </button>
+                        </div>
+                        <div class="form-row">
+                            <a href="#" id="resetReservation" class="terciary-button">
+                                <p>Annuler</p>
+                            </a>
+                            <a href="#" id="closeReservation" class="terciary-button-s">
+                                <p>❌</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="idClient" class="form-block">
+                        <label>Nom complet</label>
+                        <input type="text" id="fullname" >
+                        <div id="fullnameError" class="error"></div>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label>Email</label>
+                                <input type="text" id="email" >
+                                <div id="emailError" class="error"></div>
+                            </div>
+                            <div class="form-column">
+                                <label>Téléphone</label>
+                                <input type="text" id="phone" >
+                                <div id="phoneError" class="error"></div>
+                            </div>
+                        </div>
+                        <label>Adresse</label>
+                        <input type="text" id="adress" >
+                        <div id="adressError" class="error"></div>
+                    </div>
+                    <div id="logement" class="form-block">
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label>Type de logement</label>
+                                <select id="typeLogement" value="">
+                                    <option value=""></option>
+                                    <option value="maison">maison</option>
+                                    <option value="appartement">appartement</option>
+                                </select>
+                                <div id="typeLogementError" class="error"></div>
+                            </div>
+                            <div class="form-column">
+                                <div id="optionMsn" class="d-none">
+                                    <div class="form-row">
+                                        <label>Piscine</label>
+                                        <input type="checkbox" id="msnPiscine">
+                                        <label>Jardin</label>
+                                        <input type="checkbox" id="msnJardin">
+                                    </div>
+                                    <div id="optionMsnError" class="error"></div>
+                                </div>
+                                <div id="optionApt" class="d-none">
+                                    <div class="form-row">
+                                        <label>Balcon</label>
+                                        <input type="checkbox" id="aptBalcon">
+                                        <label>Ascenseur</label>
+                                        <input type="checkbox" id="aptAscenseur">
+                                    </div>
+                                    <div id="optionAptError" class="error"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="infoSejour" class="form-row-d">
+                        <div class="form-column">
+                            <label>Nombre de convives</label>
+                            <input type="number" id="nbConvive" value="0">
+                            <div id="nbConviveError" class="error"></div>
+                        </div>
+                        <div class="form-column">
+                            <label>Date d'arrivée</label>
+                            <input type="date" id="dateArr">
+                            <div id="dateArrError" class="error"></div>
+                        </div>
+                        <div class="form-column">
+                            <label>Date de départ</label>
+                            <input type="date" id="dateDep">
+                            <div id="dateDepError" class="error"></div>
+                        </div>
+                    </div>
+                    <div id="options">
+                        <div class="form-row">
+                            <label>Chauffeur</label>
+                            <input type="checkbox" id="chauffeur">
+                            <label>Guide</label>
+                            <input type="checkbox" id="guide">
+                            <label>Petit-déjeuner</label>
+                            <input type="checkbox" id="petitDej">
+                        </div>
+                        <div id="diet" class="d-none">
+                            <div class="form-row">
+                                <label>Pas de régime</label>
+                                <input type="checkbox" id="noRegime">
+                                <label>Vegan</label>
+                                <input type="checkbox" id="vegan">
+                                <label>Halal</label>
+                                <input type="checkbox" id="halal">
+                            </div>
+                        </div>
+                        <div id="dietError" class="error"></div>
+                    </div>
+                    <div id="summary"></div>
+                </form>
+            </section>
+            <section class="vrac-announce">
+                <div class="container">
+                    <div class="row">
+                        <h1>Réservez vos vacances facilement avec ZENBNB</h1>
+                        <h2>Toutes nos locations de vacances</h2>
+                        <!---------------------Card------------------------->
+                        <div id="announce">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sea-view">
+                <div class="container">
+                    <div class="row">
+                        <h2>Nos locations vue mer</h2>
+                        <div class="carousel">
+                            <div class="back-btn">
+                                <img src="assets/images/icone/back-arrow.png" alt="click to watch previous image">
+                            </div>
+                            <div id="sea-view-announce" class="slide">
+                            </div>
+                            <div class="forward-btn">
+                                <img src="assets/images/icone/back-arrow.png" alt="click to watch next image">
+                            </div>
+                        </div>
+                    </div>
+                </div>          
+            </section>
         </main>
         <footer>
-
         </footer>
     </body>
+    <script src="script.js"></script>
 </html>

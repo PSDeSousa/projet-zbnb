@@ -1,0 +1,27 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+@use '../../abstracts/colors' as *;
+@use '../../abstracts/typography' as *;
+//Mise en forme accordéons (jusqu'à 3, sinon que accordion et utilise une boucle
+/*.accordion-btn, .accordion-btn2, .accordion-btn3{
+    background-color : $terciary-color;
+    font-size : 1rem;
+    font-family:$primary-font;
+    border-bottom: 2px $secondary-color solid;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.accordion-content, .accordion-content2, .accordion-content3{
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-top:0.5rem;
+    margin-bottom:1.5rem;
+}
+.closed, .closed2, .closed3{
+    font-size : 2rem;
+    font-family:$primary-font;
+}
+    */

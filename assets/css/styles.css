@@ -1,0 +1,21 @@
+/**
+**************** Police **************************
+**/
+/********** Inter **********/
+/** Inter Regular **/
+@font-face {
+  font-family: "Inter Regular";
+  src: url("../fonts/Inter/Inter_18pt-Regular.ttf");
+}
+/** Inter Medium **/
+@font-face {
+  font-family: "Inter Medium";
+  src: url("../fonts/Inter/Inter_18pt-Medium.ttf");
+}
+/** Inter Bold **/
+@font-face {
+  font-family: "Inter Bold";
+  src: url("../fonts/Inter/Inter_18pt-Bold.ttf");
+}
+
+/*# sourceMappingURL=styles.css.map */
